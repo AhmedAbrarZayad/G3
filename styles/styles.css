@@ -13,7 +13,13 @@
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
+.dark-03{
+    color: #727272;
+}
 /* shared styles */
+.hide{
+    display: none;
+}
 .display-flex{
     display: flex;
 }
@@ -57,10 +63,11 @@ button{
 }
 .banner-image{
     padding-top: 5%;
-    width: 95%;
+    width: 100%;
     height: auto;
 }
 /* main */
+/* features */
 .features{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -72,6 +79,50 @@ button{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10%;
+}
+/* facts */
+.facts{
+    padding: 5%;
+}
+.fact-cards{
+    padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.fact-card{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+.sponsors{
+    text-align: center;
+}
+.sponsor-images{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.copy-right{
+    padding: 0.01% 5% 0;
+    color: white;
+}
+.copy-right p{
+    text-align: center;
+    padding: 2%;
+    background-color: #FFF4E7;
 }
 /* media query */
 @media screen and (max-width: 576px){
